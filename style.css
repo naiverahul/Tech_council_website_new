@@ -170,7 +170,7 @@ header {
     margin-bottom: 5px;
     position: relative;
     transform-origin: bottom right; /* Transform from bottom-right */
-    transition: transform 0.8s ease, opacity 0.8s ease; /* Smooth transform */
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth transform */
 }
 
 .carousel-main img {
