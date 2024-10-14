@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Council</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body class="body">
+
+    <!-- Background Particle Animation -->
+    <div id="particles-js"></div>
+
+    <!-- Header with Menu Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/iiitd.png" alt="College Logo" class="college-logo">
+                <div class="logo">Tech Council</div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://studentcouncil.iiitd.edu.in/clubs.html" target="_blank" rel="noopener noreferrer">Societies</a></li>
+                <li><a href="https://iiitd.ac.in/contact" target = "_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Slider Section -->
+         
+        <!-- <section id="slider">
+            <h1>Upcoming Events</h1>  Header for Upcoming Events 
+            <div class="slider-item">
+                <img src="images/society1.jpg" alt="Society 1">
+                <p>Description of Society 1</p>
+            </div>
+            <div class="slider-item">
+                <img src="images/society2.jpg" alt="Society 2">
+                <p>Description of Society 2</p>
+            </div>
+            <div class="slider-item">
+                <img src="images/society3.jpg" alt="Society 3">
+                <p>Description of Society 3</p>
+            </div>
+        </section>
+         -->
+
+        <!-- Central Image Section
+        <section id="central-image-section">
+            <img src="images/society.jpg" alt="Society" class="central-image"> Central Image 
+        </section> -->
+
+        <!-- Carousel Section -->
+        <section id="carousel-section">
+            <h2>Upcoming Events</h2>
+            <div class="carousel-container">
+                <!-- Main Image -->
+                <div class="carousel-main">
+                    <img id="main-image" src="images/society1.jpg" alt="Society 1">
+                    <p id="main-description">Description of Event 1</p>
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="carousel-thumbnails">
+                    <img class="thumbnail" src="images/society1.jpg" alt="Society 1" onclick="showSlide(0)">
+                    <img class="thumbnail" src="images/society2.jpg" alt="Society 2" onclick="showSlide(1)">
+                    <img class="thumbnail" src="images/society3.jpg" alt="Society 3" onclick="showSlide(2)">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Grid of Descriptive Tiles -->
+        <section id="tiles-section">
+            <h2>Explore Various Roles in Tech Council</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Volunteer</h3>
+                    <img src="images/majdoorjpg.jpg" alt="Volunteer in action">
+                    <p>Real Majdoor before becoming a corporate Majdoor</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Design Team</h3>
+                    <img src="images/uiuxcat.jpg" alt="Design Team">
+                    <p>Use your own creativity, not Bing AI!</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Developer</h3>
+                    <img src="images/devloper.jpg" alt="Developer in action">
+                    <p>Ctrl + v | Ctrl + x | Ctrl + x</p>
+                </div>
+                <div class="grid-item">
+                    <h3>PR and Outreach</h3>
+                    <img src="images/selme.gif" alt="Mentor guiding students">
+
+                    <p>Sell me this pen</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Mentor</h3>
+                    <img src="images/teacher.jpg" alt="Mentor guiding students">
+                    <p>Teach them what you did in your life, so mentees don’t do the same.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer with Social Media Links -->
+    <footer>
+        <p>Follow us on social media</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

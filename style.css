@@ -1,0 +1,322 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #cecece; /* Dark background for modern look */
+    color: #EAEAEA; /* Softer white for readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Particle Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it stays in the background */
+}
+
+/* Header and Navbar */
+header {
+    background-color: rgba(10, 150, 300, 0.3); /* Transparent background */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* Logo Container with College Logo */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.college-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Adjusted Logo Text */
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: #59554d;
+    font-size: 18px;  /* Reduced size for better alignment */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Logo Text with Modern Font (Poppins) */
+
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #EAEAEA;
+    margin: 4px 0;
+}
+
+/* Navbar Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #59554d;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color:  #59554d; /* Gold hover effect */
+    color: #e8cece;
+    border-radius: 5px;
+}
+
+.menu.active {
+    display: flex; /* For toggled hamburger menu on mobile */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Slider Section */
+/* #slider {
+    display: flex;
+    overflow: hidden;
+    height: 300px; 
+    margin-top: 124px; 
+    position: relative;
+} */
+
+/* #slider h1 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    background-color: rgba(0, 47, 108, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.slider-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slider-item img, 
+.slider-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* Carousel Section */
+#carousel-section {
+    text-align: center;
+    margin-top: 124px; /* Align with navbar */
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Hide overflowing image during transitions */
+}
+
+#carousel-section h2 {
+    font-family: 'Arial-black' sans-serif;
+    color: #4c5858; 
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-main {
+    color: #4c5858;
+    font-style: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: bottom right; /* Transform from bottom-right */
+    transition: transform 0.8s ease, opacity 0.8s ease; /* Smooth transform */
+}
+
+.carousel-main img {
+    width: 60%; /* Image will fit the fixed width of the container */
+    height: 60%; /* Image will fit the fixed height of the container */
+    object-fit: cover; /* Ensure image fills the space without distortion */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.carousel-thumbnails {
+    display: flex;
+    gap: 18px;
+    justify-content: right;
+}
+
+.carousel-thumbnails img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-thumbnails img.active {
+    transform: scale(1.2); /* Enlarge the active thumbnail */
+    border-color: #055daa; /* Highlight active thumbnail */
+}
+
+.carousel-thumbnails img:hover {
+    border-color: #055daa; /* Highlight color on hover */
+}
+
+
+
+/* Keep the tiles section as is */
+
+
+
+
+/* Tiles Section */
+#tiles-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(10, 150, 300, 0.1);
+}
+
+#tiles-section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #4c5858; 
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: rgba(10, 150, 300, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow for better effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover effect for grid items */
+.grid-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the tile */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.grid-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #59554d; /* Gold heading color */
+}
+
+.grid-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #EAEAEA;
+    margin-top: 10px;
+}
+
+.grid-item img, 
+.grid-item video {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(10, 150, 300, 0.2);
+    padding: 30px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .menu {
+        display: none; /* Hide menu initially */
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
